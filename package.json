@@ -1,0 +1,20 @@
+{
+  "name": "my-app",
+  "private": true,
+  "packageManager": "pnpm@9.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "deploy": "firebase deploy"
+  },
+  "devDependencies": {
+    "turbo": "^1.13.3",
+    "firebase-tools": "^14.10.1"
+  }
+}
